@@ -1,0 +1,14 @@
+%Running this program switches off the spontaneous emission for one run only;
+BB=bb; 		%stores previous spontaneous noise multiplier;
+bbsh=bshot; 	%stores initial shot noise multiplier;
+bshot=0;	% sets shot noise to zero;
+bb=0;		% sets spontaneous to zero;
+disp('All noise now set to zero');
+p4runR;  %runs laser calculation;
+p7plot;		%plots out spectrum;
+p8plot;		% plots out fields and electrons;
+bb=BB;		%restores spontaneous multiplier to previous value;
+bshot=bbsh;     % restores shot noise input;
+disp(' ');
+disp('All noise now restored to original state');
+disp('Type  r e t u r n  and then return key to continue/exit');

@@ -34,7 +34,7 @@ PFA=FF.*conj(FF);PRA=RR.*conj(RR);
 SY=max(PFA)+max(PRA);
 
 %初始值定义 未赋值均0
-ff=zeros(N+1,1); fr=ff;
+ff=zeros(N+1,1); fr=ff;ffn=ff;frn=ff;
 
 tic;
 

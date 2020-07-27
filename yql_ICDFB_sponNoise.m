@@ -10,6 +10,12 @@ N=31; NF=1:1:N+1; %空间步数N；场点数NF
 repeat=15*N; % number of repeats of field calculations
 %【看完整个程序觉得，repeat是要让放大器行波达到稳定，这就是运行的t，所以计算15遍，从实时图看，不稳定的话还可以再多算几遍】
 kappas=kappaL/N; %每个空间步长上的耦合【！】,s为空间步长，s=L/N
+rsp = 
+isp = 
+
+
+
+
 
 % 原作者把mL,耦合矩阵sint/cost[对应sin_T/cos_T]写成相同元素的矩阵了，这里都当作常数处理
 mL=exp((gL-j*deltaL)/N); %复增益，直接用指数形式，没有近似
